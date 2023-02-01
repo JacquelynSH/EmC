@@ -8,7 +8,7 @@ import './Styles/app.css'
 
 function App() {
   return (
-    <div className="app">
+    <body className="body">
    <Navbar />
     <Routes>
        <Route path="/" element={<About />}/> 
@@ -16,7 +16,7 @@ function App() {
        <Route path="/personal" element={<PersonalProjects />}/> 
        <Route path="/contact" element={<Contact />}/> 
     </Routes>
-    </div>
+    </body>
   );
 }
 
