@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 500px;
+  height: 100%;
+  position: fixed;
 }
 
 .title {
@@ -10,6 +11,7 @@
   margin: 0;
 }
 .navbar ul {
+  flex: 1 0 10%;
   padding: 0;
   margin: 0;
   list-style: none;
