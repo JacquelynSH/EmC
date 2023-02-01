@@ -4,11 +4,11 @@ import PersonalProjects from "./views/PersonalProjects";
 import Work from "./views/Work";
 import About from "./views/About";
 import Contact from "./views/Contact";
+import './Styles/app.css'
 
 function App() {
   return (
-    <>
-    <h1>Emily Corley</h1>
+    <div className="app">
    <Navbar />
     <Routes>
        <Route path="/" element={<About />}/> 
@@ -16,7 +16,7 @@ function App() {
        <Route path="/personal" element={<PersonalProjects />}/> 
        <Route path="/contact" element={<Contact />}/> 
     </Routes>
-    </>
+    </div>
   );
 }
 

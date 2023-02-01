@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 500px;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin: 0;
+}
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
