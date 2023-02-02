@@ -1,0 +1,28 @@
+.form-container {
+  display: flex;
+  margin-left: 200px;
+  height: 100%;
+  flex-direction: column;
+  list-style: none;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 250px;
+}
+
+label {
+  font-size: 20px;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+}
