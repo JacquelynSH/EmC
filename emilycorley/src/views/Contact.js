@@ -1,6 +1,5 @@
 import { send } from 'emailjs-com';
 import { useState } from 'react';
-// import emailjs from '@emailjs/browser';
 import '../Styles/contact.css';
 
 function Contact() {
@@ -32,38 +31,42 @@ function Contact() {
 
 
   return (
-    <div className="form-container">
-      <form className='form-container' onSubmit={onSubmit}>
-        <input
-          className='name-input'
-          type='text'
-          name='from_name'
-          placeholder='Name'
-          value={toSend.from_name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          className='email-input'
-          type='text'
-          name='reply_to'
-          placeholder='E-mail'
-          value={toSend.reply_to}
-          onChange={handleChange}
-          required
-        />
-        <input
-          className='message-input'
-          type='text'
-          name='message'
-          placeholder='Message'
-          value={toSend.message}
-          onChange={handleChange}
-          required
-        />
-        <button className='about-form-btn' type='submit'>submit</button>
-      </form>
-    </div>
+    <>
+    
+      <div className="form-container">
+        <form className='input-container' onSubmit={onSubmit}>
+      <p className='contact-form-prompt'>Questions? comments? praise? Contact me directly by filling out the form below!</p>
+          <input
+            className='name-input'
+            type='text'
+            name='from_name'
+            placeholder='Name'
+            value={toSend.from_name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            className='email-input'
+            type='text'
+            name='reply_to'
+            placeholder='E-mail'
+            value={toSend.reply_to}
+            onChange={handleChange}
+            required
+          />
+          <input
+            className='message-input'
+            type='text'
+            name='message'
+            placeholder='Message'
+            value={toSend.message}
+            onChange={handleChange}
+            required
+          />
+          <button className='about-form-btn' type='submit'>submit</button>
+        </form>
+      </div>
+    </>
   );
 };
 

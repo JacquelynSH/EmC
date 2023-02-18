@@ -1,27 +1,24 @@
 .form-container {
-  display: flex;
   margin-left: 200px;
   height: 100%;
-  flex-direction: column;
+  width: 100%;
   list-style: none;
-  margin-top: 75px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 input {
   border: 1px solid;
-  border-bottom: none;
+  max-width: 500px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 250px;
-}
 
 .input-container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 label {
@@ -29,10 +26,8 @@ label {
 }
 
 .message-input {
-  width: 470px;
-  height: 110px;
-  max-width: 470px;
-  max-height: 110px;
+  width: 100%;
+  height: 139px;
   padding: 15px;
 } 
 .message-input:focus {
@@ -40,7 +35,10 @@ label {
 }
 
 .email-input {
+  height: 100%;
+  width: 100%;
   padding: 15px;
+  border-bottom: none;
 }
 
 .email-input:focus {
@@ -48,16 +46,24 @@ label {
 }
 
 .name-input {
+  height: 100%;
+  width: 100%;
   padding: 15px;
+  border-bottom: none;
 }
 .name-input:focus {
   outline: none;
 }
 
 .about-form-btn { 
+  position: relative;
+  height: 100%;
+  width: 40%;
   background-color: white;
   border: 1px solid;
   padding: 15px;
+  margin-top: 15px;
+  align-self: center;
 }
 
 input:hover::-webkit-input-placeholder {
@@ -66,4 +72,12 @@ input:hover::-webkit-input-placeholder {
 input:focus::-webkit-input-placeholder {
   color: black;
   outline: none;
+}
+
+.contact-form-prompt {
+  font-size: 21px;
+  /* margin-left: 84px; */
+  /* margin-right: 84px; */
+  margin-bottom: 50px;
+  max-width: 500px;
 }
